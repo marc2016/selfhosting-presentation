@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<a href="https://revealjs.com">
+						<img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<h3>Self hosting</h3>
+					<p>
+						<small>Marc Lammers</a></small>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h1>Aufbau</h1>
+						<img src="./img/Abbildung_1.png" style="background: transparent;">
+					</section>
+					<section>
+						<h4>Dienst</h4>
+						<h2>Fotoverwaltung</h2>
+					</section>
+					<section>
+						<h3>Komponenten</h3>
+						<ul>
+							<li>Immich App<img src="./img/logo_immich.png" style="background: transparent; height: 30px; margin: 0px; margin-left: 10px;"></li>
+							<li>Webserver<img src="./img/logo_apache.png" style="background: transparent; height: 30px; margin: 0px; margin-left: 10px;"></li>
+							<li>Redis (in-memory data structure store)<img src="./img/logo_redis.png" style="background: transparent; height: 30px; margin: 0px; margin-left: 10px;"></li>
+							<li>PostgreSQL<img src="./img/logo_postgres.png" style="background: transparent; height: 30px; margin: 0px; margin-left: 10px;"></li>
+						</ul>
+					</section>
+					<section>
+						<h1>Zu kompliziert</h1>
+					</section>
+				</section>
+				<section>
+					<img src="./img/logo_docker.png" style="background: transparent; height: 250px;">
+					<ul>
+						<li>viele isolierte Docker Container</li>
+						<li>kein komplettes System im Container</li>
+						<li>einfach verschiebbar</li>
+						<li>läuft überall, wo Docker läuft</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
